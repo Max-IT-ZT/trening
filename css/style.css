@@ -1,16 +1,23 @@
 /* Відносні стилі */
 :root {
+  --logo-web: #4d5ae5;
+  --logo-text-text: #2e2f42;
+  --text-color: #434455;
+  --focus-color: #404bbf;
 }
 /*Загальний стиль*/
 body {
   font-family: 'Roboto', sans-serif;
-  color: var(--text-color-main);
+  color: var(--text-color);
   background-color: #ffffff;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 .container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 /* Скидання дефолтних стилів */
 h1,
@@ -26,8 +33,8 @@ p {
 
 img {
   display: block;
-  /* max-width: 100%;
-  height: auto; */
+  max-width: 100%;
+  height: auto;
 }
 
 button {
@@ -63,4 +70,53 @@ ol {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+/* ============HEADER============= */
+.header-conatiner {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
+}
+.logo {
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--logo-web);
+  margin-right: 40px;
+}
+.logo-text {
+  color: var(--logo-text-text);
+}
+.menu-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.menu-item {
+  font-weight: 500;
+  color: var(--logo-text-text);
+}
+.menu-item:focus,
+.menu-item:hover {
+  color: var(--focus-color);
+}
+.address-menu {
+  margin-left: auto;
+}
+.address-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 40px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+.address-item:focus,
+.address-item:hover {
+  color: var(--focus-color);
 }
