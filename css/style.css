@@ -122,7 +122,14 @@ ol {
 }
 /* =========HERO========== */
 .hero {
-  background-color: var(--logo-text-bc);
+  background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url('/images/people-office.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 188px 0px;
 }
 .hero-logo {
