@@ -1,7 +1,7 @@
 /* Відносні стилі */
 :root {
   --logo-web: #4d5ae5;
-  --logo-text-text: #2e2f42;
+  --logo-text-bc: #2e2f42;
   --text-color: #434455;
   --focus-color: #404bbf;
 }
@@ -90,7 +90,7 @@ ol {
   margin-right: 40px;
 }
 .logo-text {
-  color: var(--logo-text-text);
+  color: var(--logo-text-bc);
 }
 .menu-list {
   display: flex;
@@ -99,7 +99,7 @@ ol {
 }
 .menu-item {
   font-weight: 500;
-  color: var(--logo-text-text);
+  color: var(--logo-text-bc);
 }
 .menu-item:focus,
 .menu-item:hover {
@@ -120,3 +120,62 @@ ol {
 .address-item:hover {
   color: var(--focus-color);
 }
+/* =========HERO========== */
+.hero {
+  background-color: var(--logo-text-bc);
+  padding: 188px 0px;
+}
+.hero-logo {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.1;
+  text-align: center;
+  color: #ffffff;
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+}
+.hero-btn {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  padding: 16px 32px;
+  background-color: var(--logo-web);
+  min-width: 169px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--focus-color);
+}
+/* ==========WY US?=========== */
+.advantages-container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.advantages-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.advantages-item {
+  max-width: 264px;
+}
+.subtitle {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--logo-text-bc);
+}
+/* ==========WORK=========== */
+
+/* ==========TEAM=========== */
+
+/* ==========FOOTER=========== */
