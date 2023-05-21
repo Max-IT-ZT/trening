@@ -1,11 +1,16 @@
-/* Відносні стилі */
+/*! ==========Відносні стилі========== */
 :root {
   --logo-web: #4d5ae5;
   --logo-text-bc: #2e2f42;
   --text-color: #434455;
   --focus-color: #404bbf;
+  --bc-color-svg-section: #f4f4fd;
+  --subtitle-color: #2e2f42;
+  --svg-bc: #4d5ae5;
 }
-/*Загальний стиль*/
+/*? ==========////Відносні стилі////========== */
+
+/*! =========Загальний стиль=========*/
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--text-color);
@@ -19,7 +24,31 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
-/* Скидання дефолтних стилів */
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  margin-bottom: 72px;
+}
+.section {
+  padding: 120px 0px;
+}
+.subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--subtitle-color);
+  margin-bottom: 8px;
+}
+.text {
+  margin-bottom: 8px;
+}
+/*? =========////Загальний стиль////=========*/
+
+/*! ==========Скидання дефолтних стилів========== */
 h1,
 h2,
 h3,
@@ -50,7 +79,9 @@ ol {
   margin-bottom: 0;
   padding-left: 0;
 }
-/* Скидання стилів для посиланнь і списків*/
+/*? ==========Скидання дефолтних стилів========== */
+
+/*! ==========Скидання стилів для посиланнь і списків==========*/
 .list {
   list-style: none;
 }
@@ -58,7 +89,9 @@ ol {
   text-decoration: none;
   color: inherit;
 }
-/* Приховані заголовки */
+/*? ==========Скидання стилів для посиланнь і списків==========*/
+
+/*! ==========Приховані заголовки========== */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -71,13 +104,17 @@ ol {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/* ============HEADER============= */
+/*? ==========Приховані заголовки========== */
+
+/*! ==========HEADER=========== */
+.main-header {
+  border-bottom: 1px solid #e7e9fc;
+}
 .header-conatiner {
   display: flex;
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #e7e9fc;
 }
 .logo {
   font-family: 'Raleway';
@@ -120,7 +157,9 @@ ol {
 .address-item:hover {
   color: var(--focus-color);
 }
-/* =========HERO========== */
+/*? ==========////HEADER////=========== */
+
+/*! =========HERO========== */
 .hero {
   background-image: linear-gradient(
       to right,
@@ -128,9 +167,13 @@ ol {
       rgba(46, 47, 66, 0.7)
     ),
     url('/images/people-office.jpg');
+  max-width: 1440px;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 188px 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-logo {
   font-weight: 700;
@@ -161,10 +204,11 @@ ol {
 .hero-btn:focus {
   background-color: var(--focus-color);
 }
-/* ==========WY US?=========== */
-.advantages-container {
-  padding-top: 120px;
-  padding-bottom: 120px;
+/*? =========////HERO////========== */
+
+/*! ==========ADVANTAGES?=========== */
+.advantages {
+  padding-bottom: 0px;
 }
 .advantages-list {
   display: flex;
@@ -174,6 +218,16 @@ ol {
 .advantages-item {
   max-width: 264px;
 }
+.advantages-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bc-color-svg-section);
+  border-radius: 4px;
+  margin-bottom: 8px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 .subtitle {
   margin-bottom: 8px;
   font-weight: 500;
@@ -181,8 +235,69 @@ ol {
   line-height: 1.2;
   color: var(--logo-text-bc);
 }
-/* ==========WORK=========== */
+/*? ==========////ADVANTAGES////=========== */
 
-/* ==========TEAM=========== */
+/*! ==========WORK=========== */
+.work {
+}
 
-/* ==========FOOTER=========== */
+.work-title {
+}
+.work-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.work-item {
+  flex-basis: calc((100%-24 * 2) / 3);
+}
+/*? ==========////WORK////=========== */
+
+/*! ==========TEAM=========== */
+.team {
+  background-color: var(--bc-color-svg-section);
+}
+.team-list {
+  display: flex;
+  align-items: center;
+}
+.team-item {
+  flex-basis: calc((100%-24 * 3) / 4);
+}
+.team-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 32px 16px;
+  max-width: 264px;
+  background: #ffffff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+.icons-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.icons-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  fill: var(--bc-color-svg-section);
+  background-color: var(--svg-bc);
+  border-radius: 50%;
+}
+.icons-link:focus,
+.icons-link:hover {
+  background-color: var(--focus-color);
+}
+/*? ==========////TEAM////=========== */
+
+/*! ==========FOOTER=========== */
+
+/*? ==========////FOOTER////=========== */
